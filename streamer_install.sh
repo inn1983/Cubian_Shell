@@ -55,6 +55,9 @@ git checkout aac_merge
 make clean
 make
 mkfifo fifo.pcm
+rm *.cpp *.c *.o
+sudo rm -r .git
+rm -r Camera include watermark
 
 #rtmp server install
 cd $CWD
