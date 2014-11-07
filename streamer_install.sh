@@ -54,6 +54,7 @@ cd $CWD/$APP_REPO_LOCAL
 git checkout aac_merge
 make clean
 make
+mkfifo fifo.pcm
 
 #rtmp server install
 cd $CWD
