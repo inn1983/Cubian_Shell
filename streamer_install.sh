@@ -68,9 +68,10 @@ cd /var/www
 sudo git clone https://github.com/inn1983/rtmp_flowplayer
 
 #
-sudo echo sunxi_cedar_mod >> /etc/modules
+sudo bash -c "echo sunxi_cedar_mod >> /etc/modules"
 
 #kernel install
+cd $CWD
 git clone $KERNEL_REPO $KERNEL_REPO_LOCAL
 
 cd /boot
