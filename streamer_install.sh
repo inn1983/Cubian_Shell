@@ -17,6 +17,9 @@ APP_REPO_LOCAL="rtmpstreamer"
 
 #CRTMPSERVER_INSTALLDIR=rtmptest/crtmp
 
+#timezone setting
+sudo cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
 #cubian update
 sudo apt-get update
 sudo apt-get install -y cubian-update
