@@ -69,6 +69,13 @@ cd rtmptest/crtmp
 wget http://cubieboard.jp/downloadfiles/crtmp_build.tar.gz
 tar zxvf crtmp_build.tar.gz
 
+#
+cd $CWD
+mkdir red5
+cd red5
+wget http://www.red5.org/downloads/red5/1_0_1/red5-1.0.1.tar.gz
+tar zxvf red5-1.0.1.tar.gz
+
 #web server install
 sudo apt-get install -y apache2
 cd /var/www
