@@ -91,6 +91,8 @@ sudo mv firmware firmware.orig
 sudo cp -r $CWD/$KERNEL_REPO_LOCAL/lib/modules .
 sudo cp -r $CWD/$KERNEL_REPO_LOCAL/lib/firmware .
 
+sudo history -c
+
 
 
 
