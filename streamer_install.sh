@@ -98,6 +98,11 @@ sudo mv firmware firmware.orig
 sudo cp -r $CWD/$KERNEL_REPO_LOCAL/lib/modules .
 sudo cp -r $CWD/$KERNEL_REPO_LOCAL/lib/firmware .
 
+#set timezone
+sudo echo "Asia/Tokyo" > /etc/timezone
+sudo dpkg-reconfigure -f noninteractive tzdata
+
+# clean history
 sudo history -c
 
 
