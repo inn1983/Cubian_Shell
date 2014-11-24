@@ -18,7 +18,7 @@ APP_REPO_LOCAL="rtmpstreamer"
 #CRTMPSERVER_INSTALLDIR=rtmptest/crtmp
 
 #timezone setting
-sudo echo "Asia/Tokyo" > /etc/timezone
+sudo sh -c "echo "Asia/Tokyo" > /etc/timezone"
 sudo dpkg-reconfigure -f noninteractive tzdata
 
 #cubian update
