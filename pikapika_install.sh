@@ -55,8 +55,8 @@ npm install serialport
 
 #arduino tool install
 cd $CWD
-sudo aptitude install arduino
-sudo aptitude install python-pip
+sudo aptitude install -y arduino
+sudo aptitude install -y python-pip
 sudo pip install https://github.com/datsuns/ino/archive/master.zip
 #
 sudo bash -c "echo sunxi_cedar_mod >> /etc/modules"
