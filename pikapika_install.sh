@@ -43,7 +43,7 @@ sudo apt-get install -y ftp
 
 #node.js install
 cd $CWD
-sudo apt-get install curl
+sudo apt-get install -y curl
 sudo bash -c "curl -sL https://deb.nodesource.com/setup | bash -"
 sudo apt-get install -y nodejs
 
