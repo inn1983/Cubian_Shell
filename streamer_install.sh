@@ -100,9 +100,16 @@ sudo cp -r $CWD/$KERNEL_REPO_LOCAL/lib/modules .
 sudo cp -r $CWD/$KERNEL_REPO_LOCAL/lib/firmware .
 
 # clean history
-sudo history -c
+history -c
+
+#Resolve stability issue on cubieboard 2
+cd /boot/
+wget https://raw.githubusercontent.com/mmplayer/sunxi-boards/master/sys_config/a20/cubieboard2_argon.fex
+sudo mv script.fex script.fex.orig
+sudo mv script.bin script.bin.orig
+sudo mv cubieboard2_argon.fex script.fex
+sudo bash -c "fex2bin script.fex > script.bin"
 
 
-
-
+ 
 
