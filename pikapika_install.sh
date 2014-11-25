@@ -63,7 +63,7 @@ sudo bash -c "echo sunxi_cedar_mod >> /etc/modules"
 
 #Resolve stability issue on cubieboard 2
 cd /boot/
-wget https://raw.githubusercontent.com/mmplayer/sunxi-boards/master/sys_config/a20/cubieboard2_argon.fex
+sudo wget https://raw.githubusercontent.com/mmplayer/sunxi-boards/master/sys_config/a20/cubieboard2_argon.fex
 sudo mv script.fex script.fex.orig
 sudo mv script.bin script.bin.orig
 sudo mv cubieboard2_argon.fex script.fex
