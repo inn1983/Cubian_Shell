@@ -71,8 +71,9 @@ sudo bash -c "fex2bin script.fex > script.bin"
 
 #自動起動
 cd /etc/
-sudo sed -e "13i cd /home/cubie/wkdir/pikapika_server" rc.local
-sudo sed -e "14i node app.js>/dev/null &" rc.local
+sudo mv rc.local rc.local.orig
+sudo bash -c "sed -e \"13i cd /home/cubie/wkdir/pikapika_server\" rc.local.orig > temp.txt"
+sudo bash -c "sed -e \"14i node app.js>/dev/null &\" temp.txt > rc.local"
 
 # clean history
 history -c
