@@ -74,6 +74,7 @@ cd /etc/
 sudo mv rc.local rc.local.orig
 sudo bash -c "sed -e \"13i cd /home/cubie/wkdir/pikapika_server\" rc.local.orig > temp.txt"
 sudo bash -c "sed -e \"14i node app.js>/dev/null &\" temp.txt > rc.local"
+sudo chmod a+x rc.local
 
 # clean history
 history -c
