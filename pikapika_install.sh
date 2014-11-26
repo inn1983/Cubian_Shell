@@ -58,6 +58,8 @@ cd $CWD
 sudo aptitude install -y arduino
 sudo aptitude install -y python-pip
 sudo pip install https://github.com/datsuns/ino/archive/master.zip
+sudo pip install --upgrade six
+
 #
 sudo bash -c "echo sunxi_cedar_mod >> /etc/modules"
 
